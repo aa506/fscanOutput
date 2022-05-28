@@ -207,7 +207,7 @@ if __name__ == "__main__":
     FingerOut(list1)
     ws5 = wb["Sheet"]
     wb.remove(ws5)
-    wb.save(f"fscanResult_{time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime())}.xlsx")
+    wb.save(f"{sys.argv[1]}_{time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime())}.xlsx")
 
     print('结果已经整理输出至当前目录！')
 
